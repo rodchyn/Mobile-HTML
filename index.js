@@ -24,7 +24,7 @@ Ext.setup({
             },
             items: [{
                 title: 'About',
-                html: '<h1>Lape Mobile</h1><p>From this app you can check your tasks. Make some little changes, or talk with coworkers.</p>',
+                html: '<h1>Lape <span class="green">Mobile</spam></h1><p>From this app you can check your tasks. Make some little changes, or talk with coworkers.</p>',
                 iconCls: 'info',
                 cls: 'card1'
             }, /*{
@@ -41,28 +41,10 @@ Ext.setup({
                 cls: 'card3',
                 iconCls: 'download'
             }, */{
-                    xtype: 'fieldset',
-                    title: 'Personal Info',
-                    instructions: 'Please enter the information above.',
-                    items: [{
-                        xtype: 'emailfield',
-                        name : 'email',
-                        label: 'Email',
-                        placeHolder: 'you@sencha.com',
-                        useClearIcon: true
-                    }, {
-                        xtype: 'passwordfield',
-                        name : 'password',
-                        label: 'Password',
-                        useClearIcon: false
-                    }, {
-                        xtype: 'checkboxfield',
-                        name : 'save_password',
-                        label: 'Save password',
-                        value: true
-                    }],
+
 	            title: 'Settings',
                     cls: 'card4',
+              html: '<h2>Settings</h2>',
                     iconCls: 'settings'
             }, /*{
                 title: 'User',
