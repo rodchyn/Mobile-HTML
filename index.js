@@ -12,6 +12,7 @@ Ext.setup({
                 }
             },
             fullscreen: true,
+            autoScroll: true,
             ui: 'light',
             cardSwitchAnimation: {
                 type: 'slide',
@@ -23,10 +24,10 @@ Ext.setup({
             },
             items: [{
                 title: 'About',
-                html: '<h1>Bottom Tabs</h1><p>Docking tabs to the bottom will automatically change their style. The tabs below are type="light", though the standard type is dark. Badges (like the 4 &amp; Long title below) can be added by setting <code>badgeText</code> when creating a tab/card or by using <code>setBadge()</code> on the tab later.</p>',
+                html: '<h1>Lape Mobile</h1><p>From this app you can check your tasks. Make some little changes, or talk with coworkers.</p>',
                 iconCls: 'info',
                 cls: 'card1'
-            }, {
+            }, /*{
                 title: 'Favorites',
                 html: '<h1>Favorites Card</h1>',
                 iconCls: 'favorites',
@@ -36,20 +37,39 @@ Ext.setup({
                 title: 'Downloads',
                 id: 'tab3',
                 html: '<h1>Downloads Card</h1>',
-                badgeText: 'Text can go here too, but it will be cut off if it is too long.',
+                //badgeText: 'Text can go here too, but it will be cut off if it is too long.',
                 cls: 'card3',
                 iconCls: 'download'
-            }, {
-                title: 'Settings',
-                html: '<h1>Settings Card</h1>',
-                cls: 'card4',
-                iconCls: 'settings'
-            }, {
+            }, */{
+                    xtype: 'fieldset',
+                    title: 'Personal Info',
+                    instructions: 'Please enter the information above.',
+                    items: [{
+                        xtype: 'emailfield',
+                        name : 'email',
+                        label: 'Email',
+                        placeHolder: 'you@sencha.com',
+                        useClearIcon: true
+                    }, {
+                        xtype: 'passwordfield',
+                        name : 'password',
+                        label: 'Password',
+                        useClearIcon: false
+                    }, {
+                        xtype: 'checkboxfield',
+                        name : 'save_password',
+                        label: 'Save password',
+                        value: true
+                    }],
+	            title: 'Settings',
+                    cls: 'card4',
+                    iconCls: 'settings'
+            }, /*{
                 title: 'User',
                 html: '<h1>User Card</h1>',
                 cls: 'card5',
                 iconCls: 'user'
-            }]
+            }*/]
         });
     }
 });
