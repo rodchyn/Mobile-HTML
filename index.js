@@ -27,7 +27,17 @@ Ext.setup({
                 html: '<h1>Lape <span class="green">Mobile</spam></h1><p>From this app you can check your tasks. Make some little changes, or talk with coworkers.</p>',
                 iconCls: 'info',
                 cls: 'card1'
-            }, /*{
+            }, {
+              title: 'Todos',
+              iconCls: 'time',
+              cls:     'card2',
+              html:    '<h1>Todos</h1>'
+            }, {
+              title: 'Chat',
+              iconCls: 'team',
+              cls:     'card3',
+              html:    '<h1>Team chat</h1>'
+            },/*{
                 title: 'Favorites',
                 html: '<h1>Favorites Card</h1>',
                 iconCls: 'favorites',
@@ -44,9 +54,9 @@ Ext.setup({
 
 	            title: 'Settings',
                     cls: 'card4',
-              html: '<h2>Settings</h2>',
+                    html: '<h2>Settings</h2>',
                     iconCls: 'settings'
-            }, /*{
+            }/*, {
                 title: 'User',
                 html: '<h1>User Card</h1>',
                 cls: 'card5',
