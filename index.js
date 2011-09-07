@@ -5,6 +5,7 @@ Ext.setup({
     glossOnIcon: false,
     onReady: function() {
         var tabpanel = new Ext.TabPanel({
+            id: 'tp',
             tabBar: {
                 dock: 'bottom',
                 layout: {
@@ -33,6 +34,7 @@ Ext.setup({
               cls:     'card2',
               html:    '<h1>Todos</h1>'
             }, {
+              id: 'chat',
               title: 'Chat',
               iconCls: 'team',
               cls:     'card3',
@@ -63,5 +65,9 @@ Ext.setup({
                 iconCls: 'user'
             }*/]
         });
+
+      setTimeout(function(){tabpanel.tabBar.getComponent(2).setBadge('2');}, 3000);
     }
+  
+  
 });
